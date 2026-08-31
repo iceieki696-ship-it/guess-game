@@ -9,7 +9,7 @@ if "secret_number" not in st.session_state:
     st.session_state.max_number = 100
     st.session_state.max_attempts = 7
 
-st.title("🎯 Угадай число")
+st.title("🎯 Слабо угадать с первого раза?!")
 
 if st.session_state.game_over == False and st.session_state.attempts == 0:
     level = st.selectbox("Выбери уровень сложности:", ["Лёгкий (1-50, 10 попыток)", "Средний (1-100, 7 попыток)", "Сложный (1-200, 5 попыток)"])
