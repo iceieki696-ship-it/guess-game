@@ -69,7 +69,7 @@ if st.session_state.play_sound == 'win':
     # Победный звук (аплодисменты)
     st.components.v1.html("""
         <audio autoplay>
-            <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3" type="audio/mpeg">
+            <source src="win.mp3" type="audio/mpeg">
         </audio>
     """, height=0)
     st.session_state.play_sound = None  # сброс
@@ -78,7 +78,7 @@ if st.session_state.play_sound == 'lose':
     # Грустный звук
     st.components.v1.html("""
         <audio autoplay>
-            <source src="https://www.soundjay.com/misc/sounds/buzzer-or-wrong-01.mp3" type="audio/mpeg">
+            <source src="lose.mp3" type="audio/mpeg">
         </audio>
     """, height=0)
     st.session_state.play_sound = None  # сброс
