@@ -66,14 +66,12 @@ if not st.session_state.game_over:
 
 # --- ЗВУКОВЫЕ ЭФФЕКТЫ ---
 if st.session_state.play_sound == 'win':
-    # Победный звук (аплодисменты)
-    st.audio(open('win.mp3', 'rb').read(), format='audio/mp3')
-    st.session_state.play_sound = None # сброс
+    st.audio(open('win.mp3','rb').read(), format='audio/mp3')
+    st.session_state.play_sound = None
 
 if st.session_state.play_sound == 'lose':
-    # Грустный звук
-    st.audio(open('lose.mp3', 'rb').read(), format='audio/mp3')
-    st.session_state.play_sound = None # сброс
+    st.audio(open('lose.mp3','rb').read(), format='audio/mp3')
+    st.session_state.play_sound = None
 
 # Отображение статистики
 st.write(f"Попыток: {st.session_state.attempts} из {st.session_state.max_attempts}")
